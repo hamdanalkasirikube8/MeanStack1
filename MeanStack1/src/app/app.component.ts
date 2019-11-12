@@ -1,3 +1,4 @@
+import { Post } from './posts/post.model';
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,7 +8,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'MeanStack1';
-  storedPosts = [];
+  storedPosts: Post[] = [];
   onPostAdded(post) {
     this.storedPosts.push(post);
   }
