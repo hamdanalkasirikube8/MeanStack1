@@ -1,2 +1,6 @@
-<h2>Mean Stack Application!</h2>
-<app-post-create></app-post-create>
+<app-header></app-header>
+<main>
+  <h2>Mean Stack Application!</h2>
+  <app-post-create (postCreated)="onPostAdded($event)" ></app-post-create>
+  <app-post-list [posts]="storedPosts" ></app-post-list>
+</main>
